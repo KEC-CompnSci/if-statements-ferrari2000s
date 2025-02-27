@@ -9,16 +9,16 @@ all_assignments_completed = True
 # TASK 1: Calculate the final score as the average of test_score and exam_score
 # ===== YOUR CODE HERE =====
 
-final_score = None  # Replace None with the calculation
+final_score = (test_score + exam_score) / 2  # Replace None with the calculation
 
 # ===== END YOUR CODE =====
 
 # TASK 2: Determine if the student passed
 # A student passes if their final_score is 60 or higher
 # ===== YOUR CODE HERE =====
-
-passed = None  # Set to True or False using an if statement
-
+passed = True  # Set to True or False using an if statement
+if final_score >= 60:
+    print(passed)
 # ===== END YOUR CODE =====
 
 # TASK 3: Assign a letter grade based on the final_score
@@ -29,8 +29,17 @@ passed = None  # Set to True or False using an if statement
 # Score below 60: "F"
 # ===== YOUR CODE HERE =====
 
-letter_grade = ""  # Set the letter grade using if-elif-else
-
+letter_grade = "B"  # Set the letter grade using if-elif-else
+if letter_grade :
+    print("F")
+elif letter_grade:
+    print("D")
+elif letter_grade:
+    print("C")
+elif letter_grade:
+    print("B")
+elif letter_grade:
+    print("A")
 # ===== END YOUR CODE =====
 
 # TASK 4: Determine honor roll status
@@ -39,8 +48,9 @@ letter_grade = ""  # Set the letter grade using if-elif-else
 # - All assignments completed
 # ===== YOUR CODE HERE =====
 
-honor_roll = None  # Set to True or False using an if statement
-
+honor_roll = False  # Set to True or False using an if statement
+if final_score >= 90:
+    print(honor_roll)
 # ===== END YOUR CODE =====
 
 # TASK 5: Determine if the student can take the advanced course
@@ -51,7 +61,7 @@ honor_roll = None  # Set to True or False using an if statement
 #   - Have a letter grade of "B" AND have completed all assignments
 # ===== YOUR CODE HERE =====
 
-can_take_advanced = None  # Set to True or False using if statements with AND/OR
+can_take_advanced = True  # Set to True or False using if statements with AND/OR
 
 # ===== END YOUR CODE =====
 
